@@ -7,12 +7,12 @@
 ## Creates the necessary object type that is required for a cacheSolve
 ## function argument
 ##'inv' denotes a placeholder for the inverse of the matrix x
-
 makeCacheMatrix <- function(x = numeric()) {
         inv<-NULL
         set<-function(y){
                 x<<-y
                 inv<<-NULL
+                ##extra bonus thrown in here
         }
         get<-function() x   
         setinverse<-function(inverse) inv<<-inverse
